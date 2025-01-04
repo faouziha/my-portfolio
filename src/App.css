@@ -1,7 +1,9 @@
 html, body {
   height: 100%;
   margin: 0;
-  padding : 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .App {
@@ -10,9 +12,12 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 600vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 
-.cursor{
+.cursor {
   background: radial-gradient(circle at center, 
     rgba(62, 88, 121, 0.8) 0%,
     rgba(62, 88, 121, 0.6) 20%, 
@@ -30,40 +35,95 @@ html, body {
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 10px rgba(62, 88, 121, 0.2));
   z-index: 0;
+  transition: height 0.3s ease, width 0.3s ease;
 }
 
-@media (max-width: 1200px) {
-  .cursor {
-    height: 400px;
-    width: 400px;
-  }
-}
-
-@media (max-width: 992px) {
-  .cursor {
-    height: 300px;
-    width: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .cursor {
-    height: 200px;
-    width: 200px;
-  }
+/* Large Desktop */
+@media screen and (min-width: 1921px) {
   .App {
-    min-height: 580vh;
-  }
-}
-
-@media (max-width: 480px) {
-  .App {
-    min-height: 541vh;
+    min-height: 650vh;
   }
   .cursor {
     height: 500px;
     width: 500px;
+  }
+}
+
+/* Desktop */
+@media screen and (max-width: 1920px) {
+  .App {
+    min-height: 600vh;
+  }
+  .cursor {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+/* Small Desktop */
+@media screen and (max-width: 1200px) {
+  .cursor {
+    height: 500px;
+    width: 500px;
+  }
+  .App {
+    min-height: 510vh;
+  }
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 992px) {
+  .cursor {
+    height: 500px;
+    width: 500px;
+  }
+  .App {
+    min-height: 585vh;
+  }
+}
+
+/* Tablet Portrait */
+@media screen and (max-width: 768px) {
+  .cursor {
+    height: 500px;
+    width: 500px;
+  }
+  .App {
+    min-height: 400vh;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .App {
+    min-height: 700vh;
+  }
+  .cursor {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+/* Mobile Portrait */
+@media screen and (max-width: 480px) {
+  .cursor {
+    height: 500px;
+    width: 500px;
     backdrop-filter: blur(1px);
+  }
+  .App {
+    min-height: 500vh;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 320px) {
+  .App {
+    min-height: 480vh;
+  }
+  .cursor {
+    height: 500px;
+    width: 500px;
   }
 }
 
@@ -71,5 +131,12 @@ html, body {
 @media (hover: none) and (pointer: coarse) {
   .cursor {
     display: none;
+  }
+}
+
+/* Handle orientation changes */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .App {
+    min-height: 800vh;
   }
 }

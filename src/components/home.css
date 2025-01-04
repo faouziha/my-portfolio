@@ -1,3 +1,5 @@
+
+
 .homesection {
     position: absolute;
     top: 10rem;
@@ -28,15 +30,16 @@
     width: 100%;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid black;
+    line-height: 1.2;
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .subtitle {
@@ -49,64 +52,118 @@
     width: 140%;
     border-bottom: 2px solid black;
     padding-bottom: 5rem;
+    line-height: 1.4;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
+.location {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+    .title {
+        font-size: 4.5rem;
+    }
+    .subtitle {
+        font-size: 1.8rem;
+        width: 150%;
+    }
+}
+
+/* Tablet Landscape */
+@media (max-width: 992px) {
     .homesection {
         top: 8rem;
-        width: 90%;
-        left: 5%;
+        width: 85%;
+        left: 7.5%;
     }
-
     .title {
         font-size: 4rem;
     }
-
     .subtitle {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        width: 160%;
     }
 }
 
+/* Tablet Portrait */
 @media (max-width: 768px) {
     .homesection {
-        position: absolute;
-        top: 10rem;
-        width: 95%;
-        left: 2.5%;
+        top: 6rem;
+        width: 90%;
+        left: 5%;
     }
-
     .title {
-        font-size: 5rem;
+        font-size: 3.5rem;
+        text-align: center;
     }
-
     .subtitle {
-        font-size: 2rem;
+        font-size: 1.4rem;
+        width: 200%;
+        padding-bottom: 3rem;
+    }
+    .location {
+        text-align: center;
+        font-size: 1.1rem;
     }
 }
 
-@media (max-width: 480px) {
-    .homesection { 
-        top: 10rem;
-        width: 98%;
-        left: 1%;
+/* Mobile Landscape */
+@media (max-width: 767px) and (orientation: landscape) {
+    .homesection {
+        top: 4rem;
     }
-
     .title {
         font-size: 3rem;
-        text-align: center;
+        padding-bottom: 0.3rem;
     }
-
     .subtitle {
-        font-size: 2rem;
-        text-align: center;
-        width: 430%;
+        font-size: 1.3rem;
+        padding-bottom: 2rem;
     }
+}
 
-    .location {
-        border-top: 2px solid black;
-        margin-top: 2rem;
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .homesection {
+        top: 5rem;
+        width: 95%;
+        left: 2.5%;
+        margin-top: 8rem;
+
+    }
+    .title {
+        font-size: 2.8rem;
         text-align: center;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 300%;
+        padding-bottom: 2rem;
+    }
+    .location {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 320px) {
+    .homesection {
+        top: 4rem;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1.1rem;
+        width: 350%;
+    }
+    .location {
         font-size: 0.9rem;
     }
 }

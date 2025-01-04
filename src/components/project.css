@@ -101,6 +101,135 @@ body {
     height: 100%;
 }
 
+/****************animations***************/
+@keyframes projectAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes projectHover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.project1, .project2, .project3, .project4 {
+    opacity: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, opacity;
+}
+
+.project1:hover, .project2:hover, .project3:hover, .project4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Animate projects when they come into view */
+.project1 {
+    animation: projectAppear 0.6s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.project2 {
+    animation: projectAppear 0.6s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.project3 {
+    animation: projectAppear 0.6s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+}
+
+.project4 {
+    animation: projectAppear 0.6s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 30% cover 50%;
+}
+
+/* Image hover effect */
+.projectimage, .projectimage2, .projectimage3, .projectimage4 {
+    transition: transform 0.3s ease;
+}
+
+.project1:hover .projectimage,
+.project2:hover .projectimage2,
+.project3:hover .projectimage3,
+.project4:hover .projectimage4 {
+    transform: scale(1.02);
+}
+
+/* Fallback for browsers that don't support view timeline */
+@supports not (animation-timeline: view()) {
+    .project1, .project2, .project3, .project4 {
+        opacity: 1;
+        animation: projectHover 3s ease infinite;
+    }
+    
+    .project2 {
+        animation-delay: 0.2s;
+    }
+    
+    .project3 {
+        animation-delay: 0.4s;
+    }
+    
+    .project4 {
+        animation-delay: 0.6s;
+    }
+}
+
+/* Mobile animations */
+@media (max-width: 768px) {
+    .project1, .project2, .project3, .project4 {
+        animation: projectAppear 0.6s ease forwards;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+    }
+    
+    .project2 {
+        animation-delay: 0.1s;
+    }
+    
+    .project3 {
+        animation-delay: 0.2s;
+    }
+    
+    .project4 {
+        animation-delay: 0.3s;
+    }
+}
+
+/* Reduce animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .project1, .project2, .project3, .project4 {
+        animation: none;
+        opacity: 1;
+    }
+    
+    .project1:hover, .project2:hover, .project3:hover, .project4:hover {
+        transform: none;
+    }
+    
+    .projectimage:hover, .projectimage2:hover, .projectimage3:hover, .projectimage4:hover {
+        transform: none;
+    }
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .projecttitle {
@@ -161,69 +290,5 @@ body {
 
     h1 {
         font-size: 1.2rem;
-    }
-}
-
-
-/****************animation***************/
-@keyframes appear {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.project1, .project2 {
-    animation: appear ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-    transform-box: fill-box;
-    transform-origin: center;
-}
-
-.project3, .project4{
-    animation: secondappear ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-    transform-box: fill-box;
-    transform-origin: center;
-}
-
-@keyframes secondappear {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-
-
-/*****************mobile animation***************/
-@media (max-width: 480px) {
-    @keyframes appear {
-        0% {
-            opacity: 0;
-            
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @keyframes secondappear {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
     }
 }
