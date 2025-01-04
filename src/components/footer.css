@@ -1,0 +1,118 @@
+.footer-content{
+    border-top: 2px solid #000000;
+    width: 141%;
+    margin-left: -30%;
+}
+
+.social-links{
+    color: #000000;
+    margin-top: 2rem;
+    margin-left: 53%;
+}
+
+.social-icon{
+    color: #000000;
+    font-size: 2rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-text{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    margin-left: 13%;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    margin-left: 13%;
+}
+
+.heart-icon {
+    color: #ff0000;
+    margin: 0 0.5rem;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .footer-content {
+        width: 130%;
+        margin-left: -15%;
+    }
+    
+    .social-links {
+        margin-left: 48%;
+    }
+    
+    .footer-text, .copyright {
+        margin-left: 8%;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-content {
+        width: 120%;
+        margin-left: -10%;
+    }
+    
+    .social-links {
+        margin-left: 45%;
+    }
+    
+    .footer-text, .copyright {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        width: 110%;
+        margin-left: -5%;
+    }
+    
+    .social-links {
+        margin-left: 40%;
+    }
+    
+    .social-icon {
+        font-size: 1.8rem;
+    }
+    
+    .footer-text, .copyright {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        width: 104%;
+        margin-left: -3%;
+    }
+    
+    .social-links {
+        margin-left: 40%;
+    }
+    
+    .social-icon {
+        font-size: 1.5rem;
+        margin-right: 0.8rem;
+    }
+    
+    .footer-text {
+        font-size: 0.9rem;
+    }
+    
+    .copyright {
+        font-size: 0.8rem;
+    }
+}

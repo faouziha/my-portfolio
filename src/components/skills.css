@@ -1,0 +1,141 @@
+.skilltitle {
+    font-size: 3rem;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.skills-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.skills {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    animation: scroll 20s linear infinite;
+    white-space: nowrap; /* Prevents wrapping of content */
+}
+
+.skills-container:hover .skills {
+    animation-play-state: paused;
+}
+
+.skillsicon {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.skilltext {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.skillcadr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.skill1,.skill2,.skill3,.skill4,.skill5,.skill6,.skill7,.skill8 {
+    border: 5px solid black;
+    width: 12rem;
+    height: 12rem;
+    box-sizing: border-box;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .skillcadr {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .skill1,.skill2,.skill3,.skill4,.skill5,.skill6,.skill7,.skill8 {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .skillsicon {
+        font-size: 2.5rem;
+    }
+
+    .skilltitle {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skillcadr {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .skill1,.skill2,.skill3,.skill4,.skill5,.skill6,.skill7,.skill8 {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .skillsicon {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .skilltitle {
+        font-size: 2rem;
+    }
+
+    .skilltext {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skillcadr {
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+    }
+
+    .skill1,.skill2,.skill3,.skill4,.skill5,.skill6,.skill7,.skill8 {
+        width: 6rem;
+        height: 6rem;
+        border-width: 3px;
+    }
+
+    .skillsicon {
+        font-size: 1.5rem;
+        padding: 0.3rem;
+    }
+
+    .skilltitle {
+        font-size: 1.5rem;
+    }
+
+    .skilltext {
+        font-size: 0.8rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}

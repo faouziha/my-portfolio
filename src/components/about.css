@@ -1,0 +1,70 @@
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0;
+}
+
+.myimage {
+    width: 30%;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+    border: 3px solid black;
+    max-width: 400px;
+}
+
+.abouttext {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0;
+    text-align: justify;
+    font-size: 1.2rem;
+    width: 50%;
+    line-height: 1.6;
+}
+
+.abouttext p {
+    text-indent: 2em;  /* This will create indentation at the start of paragraphs */
+    line-height: 1.6;  /* This will improve readability */
+}
+
+.abouttitle {
+    font-size: 3rem;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutme {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .myimage {
+        width: 80%;
+        margin: 0 auto 2rem auto;
+    }
+
+    .abouttext {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .myimage {
+        width: 90%;
+    }
+
+    .abouttext {
+        width: 95%;
+        font-size: 0.9rem;
+    }
+}
