@@ -78,7 +78,7 @@ html, body {
     width: 500px;
   }
   .App {
-    min-height: 585vh;
+    min-height: 300vh;
   }
 }
 

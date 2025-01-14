@@ -32,8 +32,8 @@ export default function Project() {
                     </div>
 
                     <div className="project4">
-                        <h1>To Do list</h1>
-                        <img className="projectimage4" src={image4} alt="To Do list" />
+                        <h1>Users management</h1>
+                        <img className="projectimage4" src={image4} alt="Users management" />
                     </div>
                     
                 </div>

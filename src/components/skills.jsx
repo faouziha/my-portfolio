@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./skills.css";
-import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faBootstrap, faSquareGit } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faBootstrap, faSquareGit, faPhp, faPython } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import Contact from "./contact";
 
@@ -44,6 +44,14 @@ export default function Skills() {
                             <FontAwesomeIcon className="skillsicon" icon={faSquareGit} />
                             <h4 className="skilltext">Git</h4>
                         </div>
+                        <div className="skillcadr skill9">
+                            <FontAwesomeIcon className="skillsicon" icon={faPhp} />
+                            <h4 className="skilltext">PHP</h4>
+                        </div>
+                        <div className="skillcadr skill10">
+                            <FontAwesomeIcon className="skillsicon" icon={faPython} />
+                            <h4 className="skilltext">Python</h4>
+                        </div>
                     </div>
                     <div className="skills">
                         <div className="skillcadr skill1">
@@ -77,6 +85,14 @@ export default function Skills() {
                         <div className="skillcadr skill8">
                             <FontAwesomeIcon className="skillsicon" icon={faSquareGit} />
                             <h4 className="skilltext">Git</h4>
+                        </div>
+                        <div className="skillcadr skill9">
+                            <FontAwesomeIcon className="skillsicon" icon={faPhp} />
+                            <h4 className="skilltext">PHP</h4>
+                        </div>
+                        <div className="skillcadr skill10">
+                            <FontAwesomeIcon className="skillsicon" icon={faPython} />
+                            <h4 className="skilltext">Python</h4>
                         </div>
                     </div>
                 </div>

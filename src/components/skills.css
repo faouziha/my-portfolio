@@ -50,7 +50,7 @@
     text-align: center;
 }
 
-.skill1,.skill2,.skill3,.skill4,.skill5,.skill6,.skill7,.skill8 {
+.skill1,.skill2,.skill3,.skill4,.skill5,.skill6,.skill7,.skill8,.skill9,.skill10 {
     border: 5px solid black;
     width: 12rem;
     height: 12rem;
@@ -73,7 +73,7 @@
         margin-right: 1rem;
     }
 
-    .skill1,.skill2,.skill3,.skill4,.skill5,.skill6,.skill7,.skill8 {
+    .skill1,.skill2,.skill3,.skill4,.skill5,.skill6,.skill7,.skill8,.skill9,.skill10 {
         width: 10rem;
         height: 10rem;
     }
@@ -93,7 +93,7 @@
         margin-right: 0.5rem;
     }
 
-    .skill1,.skill2,.skill3,.skill4,.skill5,.skill6,.skill7,.skill8 {
+    .skill1,.skill2,.skill3,.skill4,.skill5,.skill6,.skill7,.skill8,.skill9,.skill10 {
         width: 8rem;
         height: 8rem;
     }
@@ -118,7 +118,7 @@
         margin-right: 0.3rem;
     }
 
-    .skill1,.skill2,.skill3,.skill4,.skill5,.skill6,.skill7,.skill8 {
+    .skill1,.skill2,.skill3,.skill4,.skill5,.skill6,.skill7,.skill8,.skill9,.skill10 {
         width: 6rem;
         height: 6rem;
         border-width: 3px;

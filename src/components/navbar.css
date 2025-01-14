@@ -145,13 +145,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 0rem;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 0rem;
   }
 
   .navanchor {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 0.3rem;
     width: auto;
     text-align: center;
@@ -176,11 +176,13 @@
   }
   
   .navanchor {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    margin-bottom: -1rem;
+    margin-top: -1rem;
   }
   
   .icon {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .icons {

@@ -91,6 +91,8 @@
 /* Tablet Portrait */
 @media (max-width: 768px) {
     .homesection {
+        margin-top: 4rem;
+
         top: 6rem;
         width: 90%;
         left: 5%;
@@ -114,6 +116,7 @@
 @media (max-width: 767px) and (orientation: landscape) {
     .homesection {
         top: 4rem;
+        margin-top: 6rem;
     }
     .title {
         font-size: 3rem;
