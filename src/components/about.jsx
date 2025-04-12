@@ -13,7 +13,7 @@ export default function About() {
                     <div className="abouttext">
                         <p>
                             Hello! I'm Faouzi Haourigui, a passionate web developer with a strong
-                            foundation in front-end development. I specialize in creating responsive
+                            foundation in full-stack development. I specialize in creating responsive
                             and user-friendly websites. I'm constantly learning and staying up-to-date
                             with the latest web technologies to deliver the best possible solutions.
                             Let me tell you a bit more about my personal life.
