@@ -11,10 +11,12 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 600vh;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   position: relative;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .cursor {
@@ -40,9 +42,6 @@ html, body {
 
 /* Large Desktop */
 @media screen and (min-width: 1921px) {
-  .App {
-    min-height: 650vh;
-  }
   .cursor {
     height: 500px;
     width: 500px;
@@ -51,9 +50,6 @@ html, body {
 
 /* Desktop */
 @media screen and (max-width: 1920px) {
-  .App {
-    min-height: 600vh;
-  }
   .cursor {
     height: 500px;
     width: 500px;
@@ -66,9 +62,6 @@ html, body {
     height: 500px;
     width: 500px;
   }
-  .App {
-    min-height: 510vh;
-  }
 }
 
 /* Tablet Landscape */
@@ -76,9 +69,6 @@ html, body {
   .cursor {
     height: 500px;
     width: 500px;
-  }
-  .App {
-    min-height: 300vh;
   }
 }
 
@@ -88,16 +78,10 @@ html, body {
     height: 500px;
     width: 500px;
   }
-  .App {
-    min-height: 400vh;
-  }
 }
 
 /* Mobile Landscape */
 @media screen and (max-width: 767px) and (orientation: landscape) {
-  .App {
-    min-height: 700vh;
-  }
   .cursor {
     height: 500px;
     width: 500px;
@@ -111,16 +95,10 @@ html, body {
     width: 500px;
     backdrop-filter: blur(1px);
   }
-  .App {
-    min-height: 500vh;
-  }
 }
 
 /* Small Mobile */
 @media screen and (max-width: 320px) {
-  .App {
-    min-height: 480vh;
-  }
   .cursor {
     height: 500px;
     width: 500px;
@@ -131,12 +109,5 @@ html, body {
 @media (hover: none) and (pointer: coarse) {
   .cursor {
     display: none;
-  }
-}
-
-/* Handle orientation changes */
-@media screen and (orientation: landscape) and (max-height: 500px) {
-  .App {
-    min-height: 800vh;
   }
 }

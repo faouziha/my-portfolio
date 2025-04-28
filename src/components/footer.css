@@ -2,6 +2,12 @@
     border-top: 2px solid #000000;
     width: 141%;
     margin-left: -30%;
+    margin-bottom: 0;
+}
+
+.footer {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .social-links{
@@ -19,16 +25,17 @@
 
 .footer-text{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 1rem;
     margin-left: 13%;
 }
 
 .copyright{
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
     font-size: 0.9rem;
     margin-left: 13%;
+    padding-bottom: 0.5rem;
 }
 
 .heart-icon {
